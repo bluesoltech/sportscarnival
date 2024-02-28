@@ -4,18 +4,11 @@ import img1 from '../assets/img/img1.png'
 
 const Home = () => {
   return (
-    <div>
-      <div style={{
-        backgroundImage: `url(${bg1})`,
-        backgroundSize: 'contain',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        width: '100vw',
-        height: '100vh',
-      }}>
-        <div></div>
-      </div>
+    <div className='relative h-screen t-0'>
+      <img src={bg1} className='absolute top-0' alt="" />
     </div>
+
+
   )
 }
 
