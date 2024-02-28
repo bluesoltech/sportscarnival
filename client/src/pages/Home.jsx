@@ -1,8 +1,21 @@
 import React from 'react'
+import bg1 from '../assets/img/bg-1.jpg'
+import img1 from '../assets/img/img1.png'
 
 const Home = () => {
   return (
-    <div className='font-bold text-5xl text-gray-500 text-center'>Home</div>
+    <div>
+      <div style={{
+        backgroundImage: `url(${bg1})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        width: '100vw',
+        height: '100vh',
+      }}>
+        <div></div>
+      </div>
+    </div>
   )
 }
 
