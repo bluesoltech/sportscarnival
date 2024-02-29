@@ -4,6 +4,8 @@ import img1 from '../assets/img/img1.png'
 import About from '../component/About'
 import home from '../assets/img/home.png'
 import Image from '../component/Image'
+import Timer from '../component/Timer'
+import SliderLogo from '../component/SliderLogo'
 
 
 const Home = () => {
@@ -13,9 +15,10 @@ const Home = () => {
         <div className=' '>
           <img src={home} className=' top-0 w-screen' alt="" />
         </div>
-
       </div>
+      <Timer />
       <About />
+      <SliderLogo />
       <Image />
     </>
 

@@ -6,7 +6,7 @@ import about2 from '../assets/img/about2.png'
 
 const About = () => {
     return (
-        <div className='h- fit !flex !xl:flex-row !flex-col'>
+        <div className='h- fit !flex !xl:flex-row !flex-col mt-[200px]'>
             <div className='w-[100%] h-[10%] relative z-10'>
                 <div className='w-[30%] absolute top-[100px] text-center'>
                     <h1 className='text-white font-bold text-4xl'>Your Text Here</h1>
