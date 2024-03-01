@@ -1,6 +1,6 @@
 import React from 'react'
-import videobg from '../assets/img/videobg.png'
-import about2 from '../assets/img/about2.png'
+import videobg from '../assets/img/videobg.svg'
+import img22 from '../assets/img/img22.png'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -20,52 +20,53 @@ const Image = () => {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
                     infinite: true,
-                    dots: true
+
                 }
             },
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
                     initialSlide: 2
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1
                 }
             }
-        ]
+        ],
+        arrows: false
     };
     return (
-        <div className='h-fit w-full mt-[100px]'>
-            <div className='w-[100%] relative z-10'>
-                <div className='w-full absolute top-[100px] text-center p-16'>
-                    <div className="slider-container relative mt-[80px]">
+        <div className=' w-full mt-[100px]'>
+            <div className=' relative'>
+                <div className='w-full absolute top-0 p-16'>
+                    <div className="slider-container relative">
                         <Slider {...settings}>
                             <div className=''>
-                                <img src={about2} className='w-[120px] h-[150px]' alt="no" />
+                                <img src={img22} className='w-[100px] xl:w-[150px] h-[100px] xl:h-[180px]' alt="no" />
                             </div>
                             <div>
-                                <img src={about2} className='w-[120px] h-[150px]' alt="no" />
+                                <img src={img22} className='w-[100px] xl:w-[150px] h-[100px] xl:h-[180px]' alt="no" />
                             </div>
                             <div>
-                                <img src={about2} className='w-[120px] h-[150px]' alt="no" />
+                                <img src={img22} className='w-[100px] xl:w-[150px] h-[100px] xl:h-[180px]' alt="no" />
                             </div>
                             <div>
-                                <img src={about2} className='w-[120px] h-[150px]' alt="no" />
+                                <img src={img22} className='w-[100px] xl:w-[150px] h-[100px] xl:h-[180px]' alt="no" />
                             </div>
                             <div>
-                                <img src={about2} className='w-[120px] h-[150px]' alt="no" />
+                                <img src={img22} className='w-[100px] xl:w-[150px] h-[100px] xl:h-[180px]' alt="no" />
                             </div>
                             <div>
-                                <img src={about2} className='w-[120px] h-[150px]' alt="no" />
+                                <img src={img22} className='w-[100px] xl:w-[150px] h-[100px] xl:h-[180px]' alt="no" />
                             </div>
                         </Slider>
                     </div>
@@ -73,6 +74,7 @@ const Image = () => {
                 <img src={videobg} className='w-screen' alt="no" />
             </div>
         </div>
+
     )
 }
 

@@ -22,16 +22,16 @@ const Navbar = () => {
   ];
 
   return (
-    <div className=' flex justify-between items-center h-24 max-w-[full] mx-auto px-4 text-red'>
+    <div className=' flex justify-between items-center h-18 max-w-[full] mx-auto px-4 text-red'>
       {/* Logo */}
-      <img className='hight-[100px] w-[100px] ' src={Logo1} alt="" />
+      <img className='hight-[100px] w-[100px]' src={Logo1} alt="" />
 
       {/* Desktop Navigation */}
       <ul className='hidden md:flex'>
         {navItems.map(item => (
           <li
             key={item.id}
-            className='p-4 hover:bg-[#ED4A41] shadow-2xl  rounded-xl m-2 cursor-pointer duration-300 hover:text-white'
+            className='p-2 hover:bg-[#ED4A41] shadow-lg  font-bold rounded-xl m-2 cursor-pointer duration-300 hover:text-white'
           >
             {item.text}
           </li>
