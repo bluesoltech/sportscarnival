@@ -1,7 +1,4 @@
-import React, { useEffect, useRef } from 'react';
-import ticket1 from '../assets/img/ticket1.svg'
-import ticket2 from '../assets/img/ticket2.svg'
-
+import React from 'react'
 
 const Ticket = () => {
 
