@@ -47,23 +47,23 @@ var settings = {
 
 const SliderLogo = () => {
     return (
-        <div className='xl:mt-[120px] mt-[60px]'>
-            <h1 className='text-gray-600 text-2xl w-full xl:text-3xl mt-4 font-bold text-center'>SPORT CARNIVAL</h1>
-            <p className=' text-[2.1rem] leading-7 mt-10 text-gray-500 text-center my-5 '>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
-            <p className=' text-[2.1rem] leading-7 mt-5 text-gray-500 text-center my-5'>From website optimization to keyword rankings we take care of every single aspect of SEO to increase your organic traffic asap.</p>
-            <div className="slider-container justify-start items-start text-start">
+        <div className='xl:mt-[120px] mt-[60px] p-5'>
+            <h1 className='text-gray-600 text-2xl w-full xl:text-3xl mt-4 font-bold text-center '>SPORT CARNIVAL</h1>
+            <p className=' text-xl leading-7 mt-10 text-gray-500 text-center my-5 md:text-[2.1rem]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+            <p className=' text-xl leading-7 mt-5 text-gray-500 text-center my-5 md:text-[2.1rem] '>From website optimization to keyword rankings we take care of every single aspect of SEO to increase your organic traffic asap.</p>
+            <div className="slider-container xl:items-center mt-[]  md:mt-[100px]">
                 <Slider {...settings}>
                     <div className=''>
-                        <img src={marvel} className='w-[150px] h-[180px]' alt="no" />
+                        <img src={marvel} className='xl:w-[100px] w-[50px] xl:h-[100px] h-[50px]' alt="no" />
                     </div>
                     <div>
-                        <img src={img1} className='w-[150px] h-[180px]' alt="no" />
+                        <img src={img1} className='xl:w-[100px] w-[50px] xl:h-[100px] h-[50px] ' alt="no" />
                     </div>
                     <div>
-                        <img src={marvel} className='w-[150px] h-[180px]' alt="no" />
+                        <img src={marvel} className='xl:w-[100px] w-[50px] xl:h-[100px] h-[50px]' alt="no" />
                     </div>
                     <div>
-                        <img src={img1} className='w-[150px] h-[180px]' alt="no" />
+                        <img src={img1} className='xl:w-[100px] w-[50px] xl:h-[100px] h-[50px]' alt="no" />
                     </div>
                 </Slider>
             </div>
@@ -72,6 +72,3 @@ const SliderLogo = () => {
 }
 
 export default SliderLogo
-
-
-
