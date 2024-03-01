@@ -21,6 +21,7 @@ const Home = () => {
       </div>
       <Timer />
       <About />
+      <SliderLogo />
       <Image />
       <Ticket/>
     </>
