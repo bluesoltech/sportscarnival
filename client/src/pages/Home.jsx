@@ -6,6 +6,7 @@ import home from '../assets/img/home.png'
 import Image from '../component/Image'
 import Timer from '../component/Timer'
 import Ticket from '../component/Ticket'
+import SliderLogo from '../component/SliderLogo'
 
 
 const Home = () => {
@@ -21,7 +22,7 @@ const Home = () => {
       </div>
       <Timer />
       <About />
-      <SliderLogo />
+     <SliderLogo/>
       <Image />
       <Ticket/>
     </>

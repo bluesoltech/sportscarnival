@@ -41,7 +41,7 @@ const Timer = () => {
 
     return (
         <div>
-            <div className=' w-full h-fit p-[100px] text-white text-center font-pompiere bg-black flex xl:flex-row flex-col items-center justify-between '>
+            <div className=' w-full h-fit p-[100px] text-white text-center font-pompiere bg-black flex xl:flex-row flex-col items-center justify-between'>
                 <div className='w-fit h-[20%] p-9'>
                     <h1 className='tracking-wider'>NEXT<br /> SPORT CARNOIVAL</h1>
                 </div>

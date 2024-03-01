@@ -44,29 +44,76 @@ const Image = () => {
         ],
         arrows: false
     };
+    var settings1 = {
+        dots: false,
+        infinite: true,
+        speed: 3000,
+        autoplaySpeed: 3000,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        initialSlide: 0,
+        arrows: false
+    };
     return (
         <div className=' w-full mt-[100px]'>
             <div className=' relative'>
-                <div className='w-full absolute top-0 p-16'>
+                <div className='w-full absolute top-0 p-16 item-center justify-center'>
                     <div className="slider-container relative">
                         <Slider {...settings}>
                             <div className=''>
-                                <img src={img22} className='w-[100px] xl:w-[150px] h-[100px] xl:h-[180px]' alt="no" />
+                                <div className='bg-red-600 overflow-hidden w-[100px] xl:w-[250px] h-[100px] xl:h-[280px] item-center border-2 border-black rounded-lg p-2'>
+                                    <img src={img22} className='rounded-lg h-full' alt="no" />
+                                </div>
                             </div>
                             <div>
-                                <img src={img22} className='w-[100px] xl:w-[150px] h-[100px] xl:h-[180px]' alt="no" />
+                                <div className='bg-yellow-600 overflow-hidden w-[100px] xl:w-[250px] h-[100px] xl:h-[280px] item-center border-2 border-black rounded-lg p-2'>
+                                    <img src={img22} className='rounded-lg h-full' alt="no" />
+                                </div>
                             </div>
                             <div>
-                                <img src={img22} className='w-[100px] xl:w-[150px] h-[100px] xl:h-[180px]' alt="no" />
+                                <div className='bg-green-600 overflow-hidden w-[100px] xl:w-[250px] h-[100px] xl:h-[280px] item-center border-2 border-black rounded-lg p-2'>
+                                    <img src={img22} className='rounded-lg h-full' alt="no" />
+                                </div>
                             </div>
                             <div>
-                                <img src={img22} className='w-[100px] xl:w-[150px] h-[100px] xl:h-[180px]' alt="no" />
+                                <div className='bg-blue-600 overflow-hidden w-[100px] xl:w-[250px] h-[100px] xl:h-[280px] item-center border-2 border-black rounded-lg p-2'>
+                                    <img src={img22} className='rounded-lg h-full' alt="no" />
+                                </div>
                             </div>
                             <div>
-                                <img src={img22} className='w-[100px] xl:w-[150px] h-[100px] xl:h-[180px]' alt="no" />
+                                <div className='bg-pink-600 overflow-hidden w-[100px] xl:w-[250px] h-[100px] xl:h-[280px] item-center border-2 border-black rounded-lg p-2'>
+                                    <img src={img22} className='rounded-lg h-full' alt="no" />
+                                </div>
                             </div>
                             <div>
-                                <img src={img22} className='w-[100px] xl:w-[150px] h-[100px] xl:h-[180px]' alt="no" />
+                                <div className='bg-purple-600 overflow-hidden w-[100px] xl:w-[250px] h-[100px] xl:h-[280px] item-center border-2 border-black rounded-lg p-2'>
+                                    <img src={img22} className='rounded-lg h-full' alt="no" />
+                                </div>
+                            </div>
+                        </Slider>
+                    </div>
+                </div>
+                <div className='w-full absolute top-0 mt-[500px] item-end justify-end'>
+                    <div className="slider-container relative">
+                        <Slider {...settings1}>
+                            <div className=''>
+                                <h1>Bansi</h1>
+                            </div>
+                            <div className=''>
+                                <h1>Bansi</h1>
+                            </div>
+                            <div className=''>
+                                <h1>Bansi</h1>
+                            </div>
+                            <div className=''>
+                                <h1>Bansi</h1>
+                            </div>
+                            <div className=''>
+                                <h1>Bansi</h1>
+                            </div>
+                            <div className=''>
+                                <h1>Bansi</h1>
                             </div>
                         </Slider>
                     </div>

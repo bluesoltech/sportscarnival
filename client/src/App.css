@@ -1,5 +1,5 @@
 body{
-    overflow-y: hidden;
+    overflow-y: hidden !important;
     font-family: "Pompiere", sans-serif;
     font-weight: 400;
     font-style: normal;  
