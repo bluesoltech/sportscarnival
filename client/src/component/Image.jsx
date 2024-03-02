@@ -6,7 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-const Image = () => {
+
+const Image = ({ sliderTexts, sliderImages }) => {
     var settings = {
         dots: false,
         infinite: true,
@@ -49,7 +50,7 @@ const Image = () => {
         infinite: true,
         speed: 3000,
         autoplaySpeed: 3000,
-        slidesToShow: 5,
+        slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         initialSlide: 0,
@@ -58,70 +59,36 @@ const Image = () => {
     return (
         <div className=' w-full mt-[100px]'>
             <div className=' relative'>
-                <div className='w-full absolute top-0 p-16 item-center justify-center'>
-                    <div className="slider-container relative">
+`                <div className='w-full absolute top-0 p-16 item-center justify-center'>
+`                    <div className="slider-container relative">
                         <Slider {...settings}>
-                            <div className=''>
-                                <div className='bg-red-600 overflow-hidden w-[100px] xl:w-[250px] h-[100px] xl:h-[280px] item-center border-2 border-black rounded-lg p-2'>
-                                    <img src={img22} className='rounded-lg h-full' alt="no" />
+                            {sliderImages.map((image, index) => (
+                                <div key={index}>
+                                    <div className={`overflow-hidden w-[100px] xl:w-[250px] h-[100px] xl:h-[280px] item-center border-2 border-black rounded-lg p-2 ${image.bgColor}`}>
+                                        <img src={image.imgUrl} className='rounded-lg h-full' alt="no" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div className='bg-yellow-600 overflow-hidden w-[100px] xl:w-[250px] h-[100px] xl:h-[280px] item-center border-2 border-black rounded-lg p-2'>
-                                    <img src={img22} className='rounded-lg h-full' alt="no" />
-                                </div>
-                            </div>
-                            <div>
-                                <div className='bg-green-600 overflow-hidden w-[100px] xl:w-[250px] h-[100px] xl:h-[280px] item-center border-2 border-black rounded-lg p-2'>
-                                    <img src={img22} className='rounded-lg h-full' alt="no" />
-                                </div>
-                            </div>
-                            <div>
-                                <div className='bg-blue-600 overflow-hidden w-[100px] xl:w-[250px] h-[100px] xl:h-[280px] item-center border-2 border-black rounded-lg p-2'>
-                                    <img src={img22} className='rounded-lg h-full' alt="no" />
-                                </div>
-                            </div>
-                            <div>
-                                <div className='bg-pink-600 overflow-hidden w-[100px] xl:w-[250px] h-[100px] xl:h-[280px] item-center border-2 border-black rounded-lg p-2'>
-                                    <img src={img22} className='rounded-lg h-full' alt="no" />
-                                </div>
-                            </div>
-                            <div>
-                                <div className='bg-purple-600 overflow-hidden w-[100px] xl:w-[250px] h-[100px] xl:h-[280px] item-center border-2 border-black rounded-lg p-2'>
-                                    <img src={img22} className='rounded-lg h-full' alt="no" />
-                                </div>
-                            </div>
+                            ))}
                         </Slider>
+                        
                     </div>
                 </div>
                 <div className='w-full absolute top-0 mt-[500px] item-end justify-end'>
                     <div className="slider-container relative">
-                        <Slider {...settings1}>
-                            <div className=''>
-                                <h1>Bansi</h1>
-                            </div>
-                            <div className=''>
-                                <h1>Bansi</h1>
-                            </div>
-                            <div className=''>
-                                <h1>Bansi</h1>
-                            </div>
-                            <div className=''>
-                                <h1>Bansi</h1>
-                            </div>
-                            <div className=''>
-                                <h1>Bansi</h1>
-                            </div>
-                            <div className=''>
-                                <h1>Bansi</h1>
-                            </div>
-                        </Slider>
+                        <div className='w-[50%] justify-center'>
+                            <Slider {...settings1}>
+                                {sliderTexts.map((text, index) => (
+                                    <div key={index}>
+                                        <h1 className='item-center justify-center text-center'>{text}</h1>
+                                    </div>
+                                ))}
+                            </Slider>
+                        </div>
                     </div>
                 </div>
                 <img src={videobg} className='w-screen' alt="no" />
             </div>
         </div>
-
     )
 }
 
