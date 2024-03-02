@@ -69,8 +69,7 @@ const Image = ({ sliderTexts, sliderImages }) => {
                                     </div>
                                 </div>
                             ))}
-                        </Slider>
-                        
+                        </Slider>                  
                     </div>
                 </div>
                 <div className='w-full absolute top-0 mt-[500px] item-end justify-end'>
