@@ -5,6 +5,7 @@ import res from '../assets/img/res.png'
 
 
 
+
 const About = () => {
     return (
         <div className='h-fit !flex !md:flex-row !flex-col mt-[150px]'>

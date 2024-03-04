@@ -8,6 +8,7 @@ import Ticket from '../component/Ticket'
 import SliderLogo from '../component/SliderLogo'
 import img22 from '../assets/img/img22.png'
 import Hero from '../component/Hero'
+import Gallery from '../component/Gallery'
 
 const sliderTexts = [
   'Bansi',
@@ -26,8 +27,6 @@ const sliderImages = [
   { imgUrl: img22, bgColor: 'bg-purple-600' }
 ];
 
-
-
 const Home = () => {
   const activities = [
     { id: 1, name: 'Activity 1', description: 'Description for Activity 1' },
@@ -36,7 +35,7 @@ const Home = () => {
   ];
 
   const events = [
-    
+
     {
       id: 1,
       dates: ['Event 1 Date 1', 'Event 1 Date 2', 'Event 1 Date 3'],
@@ -48,15 +47,15 @@ const Home = () => {
       dates: ['Event 2 Date 2', 'Event 1 Date 2', 'Event 1 Date 3'],
       prices: ['Event 1 Price 1', 'Event 1 Price 2', 'Event 1 Price 3'],
       descriptions: ['Event 1 Description 1', 'Event 1 Description 2', 'Event 1 Description 3']
-    },    
+    },
     {
       id: 3,
       dates: ['Event 3 Date 3', 'Event 1 Date 2', 'Event 1 Date 3'],
       prices: ['Event 1 Price 1', 'Event 1 Price 2', 'Event 1 Price 3'],
       descriptions: ['Event 1 Description 1', 'Event 1 Description 2', 'Event 1 Description 3']
-    }, 
-   ]
-  
+    },
+  ]
+
   return (
     <>
       <Hero />
@@ -65,8 +64,8 @@ const Home = () => {
       <SliderLogo />
       <Image sliderTexts={sliderTexts} sliderImages={sliderImages} />
       <Ticket activities={activities} events={events} />
+      <Gallery />
     </>
-
   )
 }
 

@@ -2,11 +2,13 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import Disne from "../assets/img/Slider_logos/Disne.png"
-// import XD from "../assets/img/Slider_logos/XD.png"
-// import channel from "../assets/img/Slider_logos/Channel.png"
+import Disne from "../assets/img/Slider_logos/Desne.png"
+import XD from "../assets/img/Slider_logos/XD.png"
+import channel from "../assets/img/Slider_logos/channel.png"
 import marvel from "../assets/img/Slider_logos/marvel.png"
 import img1 from '../assets/img/img1.png'
+
+const imageSources = [marvel, img1, Disne, XD, channel];
 
 var settings = {
     dots: false,
@@ -53,18 +55,15 @@ const SliderLogo = () => {
             <p className=' text-xl leading-7 mt-5 text-gray-500 text-center my-5 md:text-[2.1rem] '>From website optimization to keyword rankings we take care of every single aspect of SEO to increase your organic traffic asap.</p>
             <div className="slider-container xl:items-center mt-[]  md:mt-[100px]">
                 <Slider {...settings}>
-                    <div className=''>
-                        <img src={marvel} className='xl:w-[100px] w-[50px] xl:h-[100px] h-[50px]' alt="no" />
-                    </div>
-                    <div>
-                        <img src={img1} className='xl:w-[100px] w-[50px] xl:h-[100px] h-[50px] ' alt="no" />
-                    </div>
-                    <div>
-                        <img src={marvel} className='xl:w-[100px] w-[50px] xl:h-[100px] h-[50px]' alt="no" />
-                    </div>
-                    <div>
-                        <img src={img1} className='xl:w-[100px] w-[50px] xl:h-[100px] h-[50px]' alt="no" />
-                    </div>
+                    {imageSources.map((imageSrc, index) => (
+                        <div key={index}>
+                            <img
+                                src={imageSrc}
+                                className="xl:w-[100px] w-[50px] xl:h-[100px] h-[50px]"
+                                alt="no"
+                            />
+                        </div>
+                    ))}
                 </Slider>
             </div>
         </div>

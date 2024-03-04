@@ -51,29 +51,28 @@ const Timer = () => {
                 <div className='w-fit h-fit p-4 rounded text-xl font-bold bg-amber-200 tracking-wider'>
                     <div className='flex md:flex-row flex-col justify-around text-black items-center text-center h-full'>
                         <div className='p-5'>
-                            <h1>{days < 10 ? `0${days}` : days}</h1>
+                            <h1 className='micro-5-regular text-5xl'>{days < 10 ? `0${days}` : days}</h1>
                             <p>Days</p>
                         </div>
                         <div className='p-5'>
-                            <h1>{hours < 10 ? `0${hours}` : hours}</h1>
+                            <h1 className='micro-5-regular text-5xl'>{hours < 10 ? `0${hours}` : hours}</h1>
                             <p>Hours</p>
                         </div>
                         <div className='p-5'>
-                            <h1>{minutes < 10 ? `0${minutes}` : minutes}</h1>
+                            <h1 className='micro-5-regular text-5xl'>{minutes < 10 ? `0${minutes}` : minutes}</h1>
                             <p>Minutes</p>
                         </div>
                         <div className='p-5'>
-                            <h1>{seconds < 10 ? `0${seconds}` : seconds}</h1>
+                            <h1 className='micro-5-regular text-5xl'>{seconds < 10 ? `0${seconds}` : seconds}</h1>
                             <p>Seconds</p>
                         </div>
                     </div>
                 </div>
-
-
                 <div className='w-fit h-[20%] items-center pt-[7px] '>
                     <button className='w-fit xl:w-[160px] p-2 h-fit xl:h-[60px] rounded bg-blue-600 tracking-wider'>BOOK PASSES !</button>
                 </div>
-            </div></div>
+            </div>
+        </div>
     )
 }
 

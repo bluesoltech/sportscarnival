@@ -17,6 +17,7 @@ const Image = ({ sliderTexts, sliderImages }) => {
         slidesToScroll: 1,
         autoplay: true,
         initialSlide: 0,
+        lazyLoad: true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -59,8 +60,8 @@ const Image = ({ sliderTexts, sliderImages }) => {
     return (
         <div className=' w-full mt-[100px]'>
             <div className=' relative'>
-`                <div className='w-full absolute top-0 p-16 item-center justify-center'>
-`                    <div className="slider-container relative">
+                `                <div className='w-full absolute top-0 p-16 item-center justify-center'>
+                    `                    <div className="slider-container relative">
                         <Slider {...settings}>
                             {sliderImages.map((image, index) => (
                                 <div key={index}>
@@ -69,7 +70,7 @@ const Image = ({ sliderTexts, sliderImages }) => {
                                     </div>
                                 </div>
                             ))}
-                        </Slider>                  
+                        </Slider>
                     </div>
                 </div>
                 <div className='w-full absolute top-0 mt-[500px] item-end justify-end'>
