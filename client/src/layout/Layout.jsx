@@ -1,18 +1,17 @@
-import React from 'react'
-import Navbar from '../component/Navbar'
-import Routers from '../routes/Routers'
-import Footer from '../component/Footer'
+import React from "react";
+import Navbar from "../component/Navbar";
+import Routers from "../routes/Routers";
+// import Footer from "../component/Footer";
 
 const Layout = () => {
-    return (
-        <div>
-            <Navbar />
-            <main>
-                <Routers />
-            </main>
-            <Footer />
-        </div>
-    )
-}
+  return (
+    <div className="bg-[#EFE8D1] h-full w-full">
+      {/* <Navbar className="" /> */}
+      <Routers />
 
-export default Layout
+      {/* <Footer /> */}
+    </div>
+  );
+};
+
+export default Layout;

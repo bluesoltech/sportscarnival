@@ -1,71 +1,80 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import Logo1 from '../assets/img/logo.png';
+// import React, { useState } from 'react';
+// import { Link } from 'react-router-dom';
+// import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+
+"use client";
+
+import React, { useState } from "react";
+import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
+import { cn } from "../utils/cn";
 
 const Navbar = () => {
-  // State to manage the navbar's visibility
-  const [nav, setNav] = useState(false);
-
-  // Toggle function to handle the navbar's display
-  const handleNav = () => {
-    setNav(!nav);
-  };
-
-  // Array containing navigation items
-  const navItems = [
-    { id: 1, text: 'HOME', path: '/' },
-    { id: 2, text: 'UPCOMING CARAIVAL & ACTIVITES', path: '/upcoming_activites' },
-    { id: 3, text: 'TEAM & VOLUNTEER', path: '/team' },
-    { id: 4, text: 'CONTACT', path: '/contact' },
-    // { id: 5, text: '' },
-  ];
-
   return (
-    <div className='flex justify-between items-center h-18 max-w-full mx-auto px-4 text-red'>
-      {/* Logo */}
-      <img className='h-12 w-12' src={Logo1} alt="Logo" />
-
-      {/* Desktop Navigation */}
-      <ul className='hidden md:flex'>
-        {navItems.map(item => (
-          <li
-            key={item.id}
-            className='p-2 hover:bg-[#ED4A41] shadow-lg  font-bold rounded-xl m-2 cursor-pointer duration-300 hover:text-white'
-          >
-            <Link to={item.path}>{item.text}</Link>
-          </li>
-        ))}
-      </ul>
-
-      {/* Mobile Navigation Icon */}
-      <div onClick={handleNav} className='block md:hidden'>
-        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
-      </div>
-
-      {/* Mobile Navigation Menu */}
-      <ul
-        className={
-          nav
-            ? 'fixed md:hidden left-0 top-0 w-[40%] h-full border-r border-r-gray-900 bg-[rgb(255,201,41)] ease-in-out duration-500'
-            : 'ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]'
-        }
-      >
-        {/* Mobile Logo */}
-        <img className='h-12 w-12 mt-2 ml-5' src={Logo1} alt="Logo" />
-
-        {/* Mobile Navigation Items */}
-        {navItems.map(item => (
-          <li
-            key={item.id}
-            className='p-4 border-b rounded-xl hover:bg-[#df2d00] duration-300 hover:text-black cursor-pointer border-gray-600'
-          >
-            <Link to={item.path}>{item.text}</Link>
-          </li>
-        ))}
-      </ul>
+    <div className="relative w-full flex items-center justify-center">
+      <Nav className="" />
     </div>
   );
 };
 
 export default Navbar;
+
+function Nav({ className }) {
+  const [active, setActive] = useState(null);
+  return (
+    <div
+      className={cn(
+        "fixed top-1 inset-x-0 w-full mx-auto z-50 flex justify-end p-2",
+        className
+      )}
+    >
+      {/* <img
+        src={Logo1}
+        className="absolute left-0 w-[75px] md:w-[200px]"
+        alt=""
+      /> */}
+      <Menu setActive={setActive}>
+        <MenuItem setActive={setActive} active={active} item="Home">
+          <div className="flex flex-col space-y-4 text-sm">
+            <HoveredLink href="/hobby">Upcoming Carnival</HoveredLink>
+            <HoveredLink href="/individual">Team</HoveredLink>
+          </div>
+        </MenuItem>
+        <MenuItem setActive={setActive} active={active} item="Activities">
+          <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+            <ProductItem
+              title="Day 1"
+              href="https://algochurn.com"
+              src="https://assets.aceternity.com/demos/algochurn.webp"
+              description="Prepare for tech interviews like never before."
+            />
+            <ProductItem
+              title="Day 2"
+              href="https://tailwindmasterkit.com"
+              src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
+              description="Production ready Tailwind css components for your next project"
+            />
+            <ProductItem
+              title="Day 3"
+              href="https://gomoonbeam.com"
+              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
+              description="Never write from scratch again. Go from idea to blog in minutes."
+            />
+            <ProductItem
+              title="Day 4"
+              href="https://userogue.com"
+              src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
+              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+            />
+          </div>
+        </MenuItem>
+        <MenuItem setActive={setActive} active={active} item="Contact Us">
+          <div className="flex flex-col space-y-4 text-sm">
+            <HoveredLink href="/hobby">Exhibitor</HoveredLink>
+            <HoveredLink href="/individual">Volunteer</HoveredLink>
+            <HoveredLink href="/team">Contact</HoveredLink>
+          </div>
+        </MenuItem>
+      </Menu>
+    </div>
+  );
+}

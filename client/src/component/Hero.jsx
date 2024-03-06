@@ -1,20 +1,17 @@
-import React from 'react'
-import home from '../assets/img/home.png'
-
+"use client";
+import React from "react";
+import { Boxes } from "./ui/background-boxes";
+// import { cn } from "../utils/cn";
+// import { TextGenerateEffect } from "./ui/text-generate-effect";
+// import logo from "../assets/img/logo.png";
+import home from "../assets/img/Hero/image1.svg";
 
 const Hero = () => {
-    return (
-        <div>
-            <div className='reltive'>
-                <div className='h-fit w-screen t-0 absoute'>
-                    <img src={home} className=' top-0 h-[800px] w-screen' alt="" />
-                </div>
-                <div className=''>
-                    <h1 className='text-[1.1rem] leading-10 mt-5 text-Black font-bold text-center my-5 md:text-[2.5rem] mb-[100px]'>Welcome to the Summer Sports Carnival 2024!</h1>
-                </div>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="">
+      <img src={home} className="z-20 w-full " alt="Hero" />
+    </div>
+  );
+};
 
-export default Hero
+export default Hero;
