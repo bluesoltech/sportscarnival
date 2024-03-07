@@ -46,7 +46,7 @@ const Timer = () => {
         <div className="w-fit h-[20%] ">
           <h1 className="tracking-wider">
             NEXT
-            <br /> SPORT CARNOIVAL
+            <br /> SPORTS CARNIVAL
           </h1>
         </div>
         <div className="w-fit h-[20%]  flex items-center">
