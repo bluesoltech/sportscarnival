@@ -39,6 +39,8 @@ function Nav({ className }) {
             <HoveredLink href="/individual">Team</HoveredLink>
           </div>
         </MenuItem>
+
+
         <MenuItem setActive={setActive} active={active} item="Activities">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
