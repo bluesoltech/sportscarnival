@@ -46,7 +46,7 @@ const Timer = () => {
         <div className="w-fit h-[20%] p-9">
           <h1 className="tracking-wider">
             NEXT
-            <br /> SPORT CARNOIVAL
+            <br/> SPORT CARNOIVAL
           </h1>
         </div>
         <div className="w-fit h-[20%] p-9">
@@ -54,7 +54,7 @@ const Timer = () => {
             <span class="material-symbols-outlined text-red-800 text-4xl">
               location_on
             </span>
-            TO BE ANNOWTATE <br /> SOON
+            TO BE ANNOWTATE <br/> SOON
           </h1>
         </div>
         <div className="w-fit h-fit p-4 rounded text-xl font-bold bg-amber-200 tracking-wider">
