@@ -42,51 +42,51 @@ const Timer = () => {
 
   return (
     <div>
-      <div className=" w-screen h-fit py-4 px-10 text-white text-center font-pompiere bg-black flex xl:flex-row flex-col items-center justify-between">
-        <div className="w-fit h-[20%] p-9">
+      <div className=" w-screen h-fit py-2 px-5 text-white text-center font-pompiere bg-black flex md:flex-row flex-col gap-5 items-center justify-between">
+        <div className="w-fit h-[20%] ">
           <h1 className="tracking-wider">
             NEXT
             <br /> SPORT CARNOIVAL
           </h1>
         </div>
-        <div className="w-fit h-[20%] p-9">
-          <h1 className="tracking-wider">
-            <span class="material-symbols-outlined text-red-800 text-4xl">
-              location_on
-            </span>
-            TO BE ANNOWTATE <br /> SOON
+        <div className="w-fit h-[20%]  flex items-center">
+          <span class="material-symbols-outlined text-red-800 text-4xl">
+            location_on
+          </span>
+          <h1 className="tracking-wider text-sm">
+            TO BE ANNOUNCED <br /> SOON
           </h1>
         </div>
-        <div className="w-fit h-fit p-4 rounded text-xl font-bold bg-amber-200 tracking-wider">
+        <div className="w-fit h-fit px-4 py-1 rounded text-xl font-bold bg-amber-200 tracking-wider">
           <div className="flex md:flex-row flex-col justify-around text-black items-center text-center h-full">
-            <div className="p-5">
-              <h1 className="micro-5-regular text-5xl">
+            <div className="p-2">
+              <h1 className="micro-5-regular text-3xl">
                 {days < 10 ? `0${days}` : days}
               </h1>
-              <p>Days</p>
+              <p className="text-sm text-gray-800">Days</p>
             </div>
-            <div className="p-5">
-              <h1 className="micro-5-regular text-5xl">
+            <div className="p-2">
+              <h1 className="micro-5-regular text-3xl">
                 {hours < 10 ? `0${hours}` : hours}
               </h1>
-              <p>Hours</p>
+              <p className="text-sm text-gray-800">Hours</p>
             </div>
-            <div className="p-5">
-              <h1 className="micro-5-regular text-5xl">
+            <div className="p-2">
+              <h1 className="micro-5-regular text-3xl">
                 {minutes < 10 ? `0${minutes}` : minutes}
               </h1>
-              <p>Minutes</p>
+              <p className="text-sm text-gray-800">Minutes</p>
             </div>
-            <div className="p-5">
-              <h1 className="micro-5-regular text-5xl">
+            <div className="p-2">
+              <h1 className="micro-5-regular text-3xl">
                 {seconds < 10 ? `0${seconds}` : seconds}
               </h1>
-              <p>Seconds</p>
+              <p className="text-sm text-gray-800">Seconds</p>
             </div>
           </div>
         </div>
         <div className="w-fit h-[20%] items-center pt-[7px] ">
-          <button className="w-fit xl:w-[160px] p-2 h-fit xl:h-[60px] rounded bg-blue-600 tracking-wider">
+          <button className="w-fit xl:w-[160px] p-2 h-fit xl:h-[60px] rounded bg-blue-500 hover:bg-blue-700 tracking-wider">
             BOOK PASSES !
           </button>
         </div>

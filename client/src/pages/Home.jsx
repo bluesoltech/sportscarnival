@@ -13,6 +13,9 @@ const Home = () => {
       <div className="flex items-center justify-center w-full ">
         <img src={About} alt="" />
       </div>
+      <div className="h-screen bg-black w-full flex items-center justify-center">
+        <h1 className="text-white text-3xl">All Events</h1>
+      </div>
     </div>
   );
 };

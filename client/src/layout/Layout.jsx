@@ -6,7 +6,7 @@ import Routers from "../routes/Routers";
 const Layout = () => {
   return (
     <div className="bg-[#EFE8D1] h-full w-full">
-      {/* <Navbar className="" /> */}
+      <Navbar className="" />
       <Routers />
 
       {/* <Footer /> */}

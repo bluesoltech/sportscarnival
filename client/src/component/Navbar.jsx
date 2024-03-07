@@ -23,7 +23,7 @@ function Nav({ className }) {
   return (
     <div
       className={cn(
-        "fixed top-1 inset-x-0 w-full mx-auto z-50 flex justify-end p-2",
+        "fixed top-1 inset-x-0 w-full mx-auto z-50 flex justify-center p-2",
         className
       )}
     >

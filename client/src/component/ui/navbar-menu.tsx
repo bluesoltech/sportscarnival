@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const transition = {
@@ -27,7 +27,7 @@ export const MenuItem = ({
     <div onMouseEnter={() => setActive(item)} className="relative ">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer  hover:opacity-[0.9] text-white"
+        className="cursor-pointer  hover:opacity-[0.9] text-black text-sm"
       >
         {item}
       </motion.p>
@@ -38,11 +38,11 @@ export const MenuItem = ({
           transition={transition}
         >
           {active === item && (
-            <div className="absolute top-[calc(100%_+_1.7rem)] left-1/2 transform -translate-x-1/2">
+            <div className="absolute top-[calc(100%_+_1.0rem)] left-1/2 transform -translate-x-1/2">
               <motion.div
                 transition={transition}
                 layoutId="active" // layoutId ensures smooth animation
-                className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
+                className="bg-white/90 backdrop-blur-md rounded-2xl overflow-hidden border border-black/[0.2]  shadow-xl"
               >
                 <motion.div
                   layout // layout ensures smooth animation
@@ -69,7 +69,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative w-fit rounded-full border border-white/[0.2] bg-black shadow-input flex justify-center space-x-4 px-8 py-6 "
+      className="relative w-fit rounded-full border border-black/[0.2] bg-white/30 backdrop-blur-sm shadow-input flex  justify-center  space-x-4 px-2 py-1 xl:px-4 xl:py-3 "
     >
       {children}
     </nav>
