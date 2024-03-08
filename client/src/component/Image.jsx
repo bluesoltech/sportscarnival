@@ -90,6 +90,8 @@ const MyComponent = () => {
     };
   }, []);
 
+
+
   return (
     <div className="relative w-full mt-[100px]">
       <div className="absolute top-0 left-0 w-full h-full z-0 items-center justify-center">
@@ -135,6 +137,7 @@ const MyComponent = () => {
         )}
       </div>
     </div>
+
   );
 };
 
