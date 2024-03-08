@@ -24,7 +24,7 @@ const Footer = () => {
                   <a href="/" class="hover:underline">Upcoming Carnival</a>
                 </li>
                 <li>
-                  <a href="/" class="hover:underline">Team</a>
+                  <a href="/team" class="hover:underline">Team</a>
                 </li>
               </ul>
             </div>
@@ -32,10 +32,10 @@ const Footer = () => {
               <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Activities</h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
-                  <a href="/" class="hover:underline ">Day1</a>
+                  <a href="/activity/art" class="hover:underline ">Art & Crafts</a>
                 </li>
                 <li>
-                  <a href="/" class="hover:underline">Day2</a>
+                  <a href="/activity/adventure" class="hover:underline">Adventure</a>
                 </li>
               </ul>
             </div>
@@ -43,13 +43,13 @@ const Footer = () => {
               <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact Us</h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
-                  <a href="#" class="hover:underline">Exhibitor</a>
+                  <a href="/exhibitor" class="hover:underline">Exhibitor</a>
                 </li>
                 <li class="mb-4">
-                  <a href="#" class="hover:underline">Volunteer</a>
+                  <a href="/volunteer" class="hover:underline">Volunteer</a>
                 </li>
                 <li class="mb-4">
-                  <a href="#" class="hover:underline">Contact</a>
+                  <a href="/contact" class="hover:underline">Contact</a>
                 </li>
               </ul>
             </div>
