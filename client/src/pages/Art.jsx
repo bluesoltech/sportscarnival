@@ -1,54 +1,60 @@
 import React from "react";
-import slide1 from "../assets/img/slide1.jpg";
-import slide2 from "../assets/img/slide2.jpg";
-import slide3 from "../assets/img/slide3.jpg";
-import slide4 from "../assets/img/slide4.jpg";
-import slide5 from "../assets/img/slide5.jpg";
-import slide6 from "../assets/img/slide6.jpg";
-import slide7 from "../assets/img/slide7.jpg";
-import slide8 from "../assets/img/slide8.jpg";
+import ARCHARY from "../assets/ADVENTURES/ARCHARY.jpg"
+import CLAYART from "../assets/ADVENTURES/CLAY ART.jpg"
+import GLASS0WORK from "../assets/ADVENTURES/GLASS WORK.jpg"
+import HORSE0RIDING from "../assets/ADVENTURES/HORSE RIDING.jpg"
+import MAGICUN from "../assets/ADVENTURES/MAGICUN.jpg"
+import MUD0ARTS from "../assets/ADVENTURES/MUD ARTS.jpg"
+import PAINTING from "../assets/ADVENTURES/PAINTING.jpg"
+import PUPPET0SHOW from "../assets/ADVENTURES/PUPPET SHOW.jpg"
 
 const cardData = [
   {
-    imgSrc: slide1,
+    imgSrc: MUD0ARTS,
     title: 'Mud Arts',
     description: 'A timeless blend of earth and creativity, sculpting stories and traditions from the very ground beneath our feet.',
     readMoreLink: '#'
   },
   {
-    imgSrc: slide2,
+    imgSrc: PUPPET0SHOW,
     title: 'Puppet Show',
     description: 'A magical performance art that brings stories to life through the intricate manipulation of characters and narratives.',
     readMoreLink: '#'
   },
   {
-    imgSrc: slide3,
+    imgSrc: GLASS0WORK,
     title: 'Glass Work',
     description: 'The transformative art of shaping and coloring glass to create stunning, light-infused pieces of decorative and functional beauty.',
     readMoreLink: '#'
   },
   {
-    imgSrc: slide4,
+    imgSrc: MAGICUN,
     title: 'Magicun',
     description: 'A realm of enchantment and illusion, where the boundaries of reality blur, inviting audiences into a world of wonder and mystique.',
     readMoreLink: '#'
   },
   {
-    imgSrc: slide3,
+    imgSrc: ARCHARY,
     title: 'Archary',
     description: 'The ancient art and sport of precision, focus, and strength, using a bow to propel arrows towards a target.',
     readMoreLink: '#'
   },
   {
-    imgSrc: slide6,
+    imgSrc: CLAYART,
     title: 'clay Art',
     description: ' A hands-on creative expression, molding raw earth into tangible forms that capture the essence of imagination and craftsmanship.',
     readMoreLink: '#'
   },
   {
-    imgSrc: slide3,
+    imgSrc: HORSE0RIDING,
     title: 'Horse Riding',
     description: ' A timeless bond between human and horse, offering a blend of adventure, grace, and a unique way to connect with nature.',
+    readMoreLink: '#'
+  },
+  {
+    imgSrc: PAINTING,
+    title: 'PAINTING',
+    description: ' ',
     readMoreLink: '#'
   },
 

@@ -1,51 +1,52 @@
 import React from 'react'
-import slide1 from "../assets/img/slide1.jpg";
+import CLIMBING0WALL from "../assets/ADVENTURES/CLIMBING WALL.jpg"
+import COMMANDO0NET from "../assets/ADVENTURES/COMMANDO NET.jpg"
+import CROSSN0STEP from "../assets/ADVENTURES/CROSSN STEP.jpg"
+import HANGING0TURE from "../assets/ADVENTURES/HANGING TURE.jpg"
+import LADDER0CLIMING from "../assets/ADVENTURES/LADDER CLIMING.jpg"
+import NET0WORKING from "../assets/ADVENTURES/NET WORKING.jpg"
+import ZIPLINE from "../assets/ADVENTURES/ZIPLINE.jpg"
+
 
 const cardData = [
   {
-    imgSrc: slide1, // Replace with actual image path or URL
+    imgSrc: CLIMBING0WALL, // Replace with actual image path or URL
     title: 'Climbing Wall',
     description: 'A vertical challenge that tests strength, endurance, and strategy, simulating the thrill of rock climbing in a controlled environment.',
     readMoreLink: '#'
   },
   {
-    imgSrc: slide1,
+    imgSrc: ZIPLINE,
     title: 'Zipline',
     description: 'An exhilarating aerial ride that propels adventurers across landscapes, offering breathtaking views and a rush of adrenaline.',
     readMoreLink: '#'
   },
   {
-    imgSrc: slide1,
+    imgSrc: LADDER0CLIMING,
     title: 'Ladder Climing',
     description: 'A test of agility and strength, where participants ascend to new heights, challenging their limits and perseverance.',
     readMoreLink: '#'
   },
   {
-    imgSrc: slide1,
+    imgSrc: COMMANDO0NET,
     title: 'Commando Net',
     description: 'A rigorous outdoor obstacle that demands physical strength and mental resilience, simulating a training exercise for elite forces.',
     readMoreLink: '#'
   },
   {
-    imgSrc: slide1,
+    imgSrc: CROSSN0STEP,
     title: 'Cross Step',
     description: 'A strategic movement technique enhancing balance and coordination, often integrated into fitness regimes and dance choreographies.',
     readMoreLink: '#'
   },
   {
-    imgSrc: slide1,
-    title: 'Balance Beam',
-    description: 'A narrow, elevated beam that tests precision, balance, and concentration, challenging both gymnasts and fitness enthusiasts.',
-    readMoreLink: '#'
-  },
-  {
-    imgSrc: slide1,
+    imgSrc: HANGING0TURE,
     title: 'Hanging Ture',
     description: 'A dynamic obstacle that swings and challenges stability, demanding agility and strength for successful navigation.',
     readMoreLink: '#'
   },
   {
-    imgSrc: slide1,
+    imgSrc: NET0WORKING,
     title: 'Net Working',
     description: 'Building and nurturing professional and social connections to exchange information, ideas, and opportunities for mutual benefit.',
     readMoreLink: '#'
