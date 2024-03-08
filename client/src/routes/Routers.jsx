@@ -36,20 +36,20 @@ const Routers = () => {
     <Routes>
       <Route path="/" element={isMobile ? <HomeM /> : <Home />} />
       <Route path="/team" element={isMobile ? <TeamM /> : <Team />} />
-      <Route path="/activity/art" element={isMobile ? <ArtM /> : <Art />} />
+      <Route path="/activity/art" element={<Art />} />
       <Route
         path="/activity/adventure"
-        element={isMobile ? <AdventureM /> : <Adventure />}
+        element={<Adventure />}
       />
       <Route
         path="/exhibitor"
-        element={isMobile ? <ExhibitorM /> : <Exhibitor />}
+        element={<Exhibitor />}
       />
       <Route
         path="/volunteer"
-        element={isMobile ? <VolunteerM /> : <Volunteer />}
+        element={<Volunteer />}
       />
-      <Route path="/contact" element={isMobile ? <ContactM /> : <Contact />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 };

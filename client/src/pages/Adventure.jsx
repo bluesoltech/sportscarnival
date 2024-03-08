@@ -8,44 +8,53 @@ import NET0WORKING from "../assets/ADVENTURES/NET WORKING.jpg"
 import ZIPLINE from "../assets/ADVENTURES/ZIPLINE.jpg"
 
 
+
+
 const cardData = [
   {
+    class: "",
     imgSrc: CLIMBING0WALL, // Replace with actual image path or URL
     title: 'Climbing Wall',
     description: 'A vertical challenge that tests strength, endurance, and strategy, simulating the thrill of rock climbing in a controlled environment.',
     readMoreLink: '#'
   },
   {
+    class: "",
     imgSrc: ZIPLINE,
     title: 'Zipline',
     description: 'An exhilarating aerial ride that propels adventurers across landscapes, offering breathtaking views and a rush of adrenaline.',
     readMoreLink: '#'
   },
   {
+    class: "",
     imgSrc: LADDER0CLIMING,
     title: 'Ladder Climing',
     description: 'A test of agility and strength, where participants ascend to new heights, challenging their limits and perseverance.',
     readMoreLink: '#'
   },
   {
+    class: "",
     imgSrc: COMMANDO0NET,
     title: 'Commando Net',
     description: 'A rigorous outdoor obstacle that demands physical strength and mental resilience, simulating a training exercise for elite forces.',
     readMoreLink: '#'
   },
   {
+    class: "",
     imgSrc: CROSSN0STEP,
     title: 'Cross Step',
     description: 'A strategic movement technique enhancing balance and coordination, often integrated into fitness regimes and dance choreographies.',
     readMoreLink: '#'
   },
   {
+    class: "object-top",
     imgSrc: HANGING0TURE,
     title: 'Hanging Ture',
     description: 'A dynamic obstacle that swings and challenges stability, demanding agility and strength for successful navigation.',
     readMoreLink: '#'
   },
   {
+    class: "",
     imgSrc: NET0WORKING,
     title: 'Net Working',
     description: 'Building and nurturing professional and social connections to exchange information, ideas, and opportunities for mutual benefit.',
@@ -55,11 +64,11 @@ const cardData = [
 
 const Adventure = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 text-sm justify-between mx-auto my-28">
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 text-sm justify-between mx-auto my-10 md:my-28 px-10 md:px-0">
       {cardData.map((item, index) => (
-        <div key={index} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto mt-5">
+        <div key={index} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto mt-10 h-fit md:p-2">
           <a href="#">
-            <img className="rounded-t-lg" src={item.imgSrc} alt="" />
+            <img className={`rounded-t-lg w-full h-[200px] object-cover ${item.class}`} src={item.imgSrc} alt="" />
           </a>
           <div className="p-5">
             <a href="#">

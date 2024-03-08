@@ -54,18 +54,18 @@ const cardData = [
   {
     imgSrc: PAINTING,
     title: 'PAINTING',
-    description: ' ',
+    description: ' A timeless bond between human and horse, offering a blend of adventure, grace, and a unique way to connect with nature. ',
     readMoreLink: '#'
   },
 
 ];
 function Art() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 text-sm justify-between mx-auto my-28">
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 text-sm justify-between mx-auto my-28 px-10 md:px-0">
       {cardData.map((item, index) => (
-        <div key={index} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto mt-6">
+        <div key={index} className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto mt-6 h-fit md:p-2">
           <a href="#">
-            <img className="rounded-t-lg" src={item.imgSrc} alt="" />
+            <img className="rounded-t-lg w-full h-[200px] object-cover" src={item.imgSrc} alt="" />
           </a>
           <div className="p-5">
             <a href="#">
